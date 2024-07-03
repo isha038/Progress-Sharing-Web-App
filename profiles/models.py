@@ -13,7 +13,7 @@ class Profile(models.Model):
         related_name = "profile"
     )
 
-    Image = ImageField(upload_to='profiles')
+    image = ImageField(upload_to='profiles')
     def __str__(self):
         return self.user.username
     
